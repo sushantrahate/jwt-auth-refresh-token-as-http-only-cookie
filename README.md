@@ -18,18 +18,18 @@ Open a browser and navigate to `http://localhost:3000`
 ## Functionality:
 
 ### Backend:
-Static File Serving: Serves static files (HTML, JS, CSS) from the public directory.
-API Routes:
-Register: Allows users to register with a username and password.
-Login: Validates credentials and issues access and refresh tokens, stored as HttpOnly cookies.
-Token Refresh: Generates a new access token if the current one expires, using the refresh token.
-Logout: Clears tokens and removes them from in-memory storage.
-Middleware:
-Token Verification: Checks for a valid access token, and attempts to renew it using the refresh token if it fails.
+- Static File Serving: Serves static files (HTML, JS, CSS) from the public directory.
+- API Routes:
+  - Register: Allows users to register with a username and password.
+  - Login: Validates credentials and issues access and refresh tokens, stored as HttpOnly cookies.
+  - Token Refresh: Generates a new access token if the current one expires, using the refresh token.
+  - Logout: Clears tokens and removes them from in-memory storage.
+- Middleware:
+  - Token Verification: Checks for a valid access token, and attempts to renew it using the refresh token if it fails.
 
 ### Frontend:
-HTML Interface: Provides forms for registration, login, accessing protected routes, and logging out.
-JavaScript Logic: Handles communication with the backend via fetch requests, including:
-Handling Credentials: Uses credentials: 'include' to include cookies in requests.
-Error Handling: Alerts users for unsuccessful actions and renews tokens if needed.
+- HTML Interface: Provides forms for registration, login, accessing protected routes, and logging out.
+- JavaScript Logic: Handles communication with the backend via fetch requests, including:
+  - Handling Credentials: Uses credentials: 'include' to include cookies in requests.
+  - Error Handling: Alerts users for unsuccessful actions and renews tokens if needed.
 
