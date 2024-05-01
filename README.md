@@ -3,7 +3,7 @@
 A simple Node.js app that implements JWT-based authentication, including handling both access and refresh tokens via HttpOnly cookies. The project serves a static HTML file and manages secure backend routes.
 
 ## Usage
-Download repo and run `node app.js`
+Download repo, install dependency `npm i` and run `node app.js`
 
 ## Access the App
 Open a browser and navigate to `http://localhost:3000`
