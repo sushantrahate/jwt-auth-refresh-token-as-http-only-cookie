@@ -33,3 +33,4 @@ Open a browser and navigate to `http://localhost:3000`
   - Handling Credentials: Uses credentials: 'include' to include cookies in requests.
   - Error Handling: Alerts users for unsuccessful actions and renews tokens if needed.
 
+If you liked it then please show your love by ⭐ the repo
