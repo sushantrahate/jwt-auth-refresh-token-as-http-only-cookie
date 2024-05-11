@@ -79,6 +79,8 @@ app.post('/login', async (req, res) => {
   refreshTokens.push(refreshToken); // Store the refresh token
 
   // JWT Token
+  // accessToken: Identifies a user and authorize, short-lived.
+  // refreshToken: Obtain new access tokens, long-lived.
   // res.json({ accessToken, refreshToken });
 
   console.log(`Setting cookies for user ${user.username}`);
