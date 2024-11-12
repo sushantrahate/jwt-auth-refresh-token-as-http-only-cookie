@@ -38,6 +38,7 @@ const users = []; // Store users in memory for this example
 
 const ACCESS_TOKEN_SECRET = 'yourAccessTokenSecret';
 const REFRESH_TOKEN_SECRET = 'yourAccessTokenSecret';
+const ACCESS_TOKEN_EXPIRATION = '15m';
 let refreshTokens = []; // Store refresh tokens in memory
 
 // Serve index.html at http://localhost:3000/
@@ -105,7 +106,7 @@ app.post('/token', (req, res) => {
     const accessToken = jwt.sign(
       { username: user.username },
       ACCESS_TOKEN_SECRET,
-      { expiresIn: '5s' }
+      { expiresIn: ACCESS_TOKEN_EXPIRATION }
     );
 
     console.log('token refreshed successfully');
